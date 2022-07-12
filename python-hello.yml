@@ -3,3 +3,5 @@
   tasks:
     - name: Hello Message
       script: hello.py
+      args:
+        executable: python3
