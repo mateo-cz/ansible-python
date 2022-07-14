@@ -2,8 +2,8 @@
   hosts: all
   tasks:
     - name: Hello Message
-      script: hello.py
+      script: hello.py # run script
       args:
         executable: python3
-      register: output
-    - debug: var=output.stdout_lines
+      register: output # output ze skryptu z print()
+    - debug: var=output.stdout_lines # output ze skryptu z print()
