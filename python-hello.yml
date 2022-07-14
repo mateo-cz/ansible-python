@@ -5,3 +5,5 @@
       script: hello.py
       args:
         executable: python3
+      register: output
+    - debug: var=output.stdout_lines
